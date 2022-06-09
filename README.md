@@ -8,3 +8,5 @@ Calendar data is able to be saved using a button and local storage. Starter code
 
 ## Contributors
 Liv Meier (livmeier$)
+
+Link to site: https://livmeierx.github.io/work-day-scheduler/

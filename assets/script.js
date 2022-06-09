@@ -2,7 +2,7 @@ var saveBtn = $(".saveBtn");
 
 $("#currentDay").text(moment().format('dddd, MMMM Do'));
 
-$(document).ready(function(){
+$(document).ready(function() {
     saveBtn.on("click", function(){
         var time = $(this).siblings(".hour").text();
         var plan = $(this).siblings(".plan").val();

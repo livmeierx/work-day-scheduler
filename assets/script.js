@@ -31,7 +31,7 @@ $(document).ready(function(){
         });
     };
     
-    function startPlanner(){
+    function startPlanner() {
         $(".hour").each(function(){
             var timeNow = $(this).text();
             var newPlan = localStorage.getItem(timeNow);
@@ -40,7 +40,7 @@ $(document).ready(function(){
                 $(this).siblings(".plan").val(newPlan);
             }
         });
-    }
+    };
 
 
 var interval = setInterval(updateHour, 15000);

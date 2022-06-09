@@ -1,9 +1,8 @@
-var saveBtn = $(".saveBtn");
-
 $(document).ready(function(){
     $(".saveBtn").on("click", function(){
         var value = $(this).siblings(".plan").val();
         var time = $(this).parent().attr("id");
+
         localStorage.setItem(time, value);
     });
 
@@ -30,7 +29,7 @@ $(document).ready(function(){
     
 updateHour();
 
-var interval = setInterval(hourUpdater, 15000);
+var interval = setInterval(updateHour, 15000);
 $("hour8 .plan").val(localStorage.getItem("hour8"));
 $("hour9 .plan").val(localStorage.getItem("hour9"));
 $("hour10 .plan").val(localStorage.getItem("hour10"));
